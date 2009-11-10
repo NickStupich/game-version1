@@ -1,0 +1,14 @@
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\obj\Debug\lesson05.exe
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\obj\Debug\lesson05.pdb
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\bin\Debug\lesson05.exe
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\bin\Debug\lesson05.pdb
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\obj\Debug\lesson05.csproj.GenerateResource.Cache
+C:\Users\Nick\Desktop\Code\OPENGL\lesson05\obj\Debug\lesson05.MainForm.resources
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\obj\Debug\lesson05.exe
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\obj\Debug\lesson05.pdb
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\obj\Debug\lesson05.MainForm.resources
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\obj\Debug\lesson05.csproj.GenerateResource.Cache
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\bin\Debug\lesson05.exe
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\bin\Debug\lesson05.pdb

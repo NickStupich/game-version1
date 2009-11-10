@@ -1,0 +1,13 @@
+start 5 5 0 90 0
+
+vertex top 0.0 1.0 0.0
+vertex fl 1.0 -1.0 1.0
+vertex fr -1.0 -1.0 1.0
+vertex br -1.0 -1.0 -1.0
+vertex bl 1.0 -1.0 -1.0
+
+quad fl fr br bl 0.5 0.5 0.5
+triangle fl fr top 1 0 0
+triangle fr br top 0 1 0
+triangle br bl top 0 0 1
+triangle bl fl top 1 1 1

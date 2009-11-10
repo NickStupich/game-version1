@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="lesson05">
+</Property><Property Name="Solution File" Value="C:\Users\Nick\Desktop\Code\OPENGL\lesson05\lesson05.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Nick\Desktop\Code\OPENGL\lesson05\lesson05.suo">
+</Property><Property Name="Date" Value="Monday, October 26, 2009">
+</Property><Property Name="Time" Value="22:06 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="lesson05.sln" Description="File successfully backed up as C:\Users\Nick\Desktop\Code\OPENGL\lesson05\Backup\lesson05.sln">
+</Event><Event ErrorLevel="0" Project="" Source="lesson05.suo" Description="File successfully backed up as C:\Users\Nick\Desktop\Code\OPENGL\lesson05\Backup\lesson05.suo">
+</Event><Event ErrorLevel="0" Project="lesson05" Source="lesson05.csproj" Description="Project file successfully backed up as C:\Users\Nick\Desktop\Code\OPENGL\lesson05\Backup\lesson05.csproj">
+</Event><Event ErrorLevel="0" Project="lesson05" Source="lesson05.csproj.user" Description="Project user file successfully backed up as C:\Users\Nick\Desktop\Code\OPENGL\lesson05\Backup\lesson05.csproj.user">
+</Event><Event ErrorLevel="0" Project="lesson05" Source="lesson05.cs" Description="File successfully backed up as C:\Users\Nick\Desktop\Code\OPENGL\lesson05\Backup\lesson05.cs">
+</Event><Event ErrorLevel="0" Project="lesson05" Source="lesson05.resx" Description="File successfully backed up as C:\Users\Nick\Desktop\Code\OPENGL\lesson05\Backup\lesson05.resx">
+</Event><Event ErrorLevel="0" Project="lesson05" Source="lesson05.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="lesson05" Source="lesson05.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="lesson05.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="lesson05.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="lesson05" Source="lesson05.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

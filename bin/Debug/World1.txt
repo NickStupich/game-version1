@@ -1,0 +1,138 @@
+start 1 1.0 1 150 0
+#start -13 10 -2 0 0
+
+value ceilHeight 3
+value doorHeight 2.2
+value rampHeight 2
+value hill2Height 5
+
+texture Textures/Brick.bmp brick
+texture Textures/ShitMud.bmp mud
+texture Textures/redBrick.bmp redBrick
+
+
+#first room
+
+vertex brt1 0.0 ceilHeight 0.0
+vertex blt1 10.0 ceilHeight 0.0
+vertex brb1 0.0 0.0 0.0
+vertex blb1 10.0 0.0 0.0
+
+vertex mrb1 0 0 7.5
+vertex mrt1 0 ceilHeight 7.5
+vertex mlb1 10 0 7.5
+vertex mlt1 10 ceilHeight 7.5
+
+vertex flt1 10.0 ceilHeight 15.0
+vertex frt1 0.0 ceilHeight 15.0
+vertex flb1 10.0 0.0 15.0
+vertex frb1 0.0 0.0 15.0
+
+vertex doorrb1 3 0 15
+vertex doorlb1 5 0 15
+vertex doorrt1 3 doorHeight 15
+vertex doorlt1 5 doorHeight 15
+
+vertex doorrceil1 3 ceilHeight 15
+vertex doorlceil1 5 ceilHeight 15
+
+
+quad flb1 frb1 brb1 blb1 tex mud floor1
+
+quad blb1 blt1 brt1 brb1 tex brick back1
+
+
+#left
+quad blb1 mlb1 mlt1 blt1 tex brick leftBack1
+quad mlb1 flb1 flt1 mlt1 tex brick leftFront1
+
+#right
+quad brt1 brb1 mrb1 mrt1 tex brick rightBack1
+quad mrt1 mrb1 frb1 frt1 tex brick rightFront1
+
+
+#wall with door
+quad flb1 doorlb1 doorlceil1 flt1 tex brick besideDoor1-1
+quad frb1 doorrb1 doorrceil1 frt1 tex brick besideDoor1-2
+quad doorlt1 doorlceil1 doorrceil1 doorrt1 tex brick aboveDoor1
+
+
+#end first room
+
+#second room
+vertex flt2 10.0 ceilHeight 15.2
+vertex frt2 0.0 ceilHeight 15.2
+vertex flb2 10.0 0.0 15.2
+vertex frb2 0.0 0.0 15.2
+
+vertex doorrb2 3 0 15.2
+vertex doorlb2 5 0 15.2
+vertex doorrt2 3 doorHeight 15.2
+vertex doorlt2 5 doorHeight 15.2
+
+vertex doorrceil2 3 ceilHeight 15.2
+vertex doorlceil2 5 ceilHeight 15.2
+
+vertex blt2 10 ceilHeight 23
+vertex brt2 0 ceilHeight 23
+vertex blb2 10 0 23
+vertex brb2 0 0 23
+
+quad blb2 flb2 frb2 brb2 tex mud floor2
+
+quad blb2 flb2 flt2 blt2 tex redBrick left2
+quad blt2 brt2 brb2 blb2 tex redBrick back2
+quad flb2 doorlb2 doorlceil2 flt2 tex redBrick backleft2
+
+quad frb2 doorrb2 doorrceil2 frt2 tex redBrick backRight2
+
+#door thickness
+quad doorlb1 doorlb2 doorlceil2 doorlceil1 color 0.2 0.2 0.2 doorleftInside
+quad doorrb1 doorrb2 doorrceil2 doorrceil1 color 0.2 0.2 0.2 doorRightInside
+quad doorrt1 doorrt2 doorlt2 doorlt1 color 0.2 0.2 0.2 doorTop
+quad doorrb1 doorlb1 doorlb2 doorrb2 color 0.2 0.2 0.2 doorbottom
+
+quad doorlceil2 doorrceil2 doorrt2 doorlt2 tex redBrick aboveDoor2
+
+#build up ramp
+vertex hillbb -10 rampHeight 15.2
+vertex hillfb -10 rampHeight 23
+vertex hillbt -10 rampHeight+ceilHeight 15.2
+vertex hillft -10 rampHeight+ceilHeight 23
+
+quad hillbb hillfb brb2 frb2 tex mud rampFloor
+quad hillbt frt2 frb2 hillbb tex redBrick rampLeftwall
+quad hillft brt2 brb2 hillfb tex redBrick rampRightWal
+
+#ledge at top of ramp
+vertex hilltopbl -15 rampHeight 23
+vertex hilltopbr -15 rampHeight 15.2
+vertex hilltoptl -15 rampHeight+ceilHeight 23
+vertex hilltoptr -15 rampHeight+ceilHeight 15.2
+
+quad hillbb hilltopbr hilltopbl hillfb tex mud rampFlat
+
+vertex hill2topbl -15 rampHeight+hill2Height 0
+vertex hill2topbr -10 rampHeight+hill2Height 0
+vertex hill2toptr -10 rampHeight+hill2Height+ceilHeight 0
+vertex hill2toptl -15 rampHeight+hill2Height+ceilHeight 0
+
+quad hilltopbr hill2topbl hill2topbr hillbb tex mud ramp2floor
+quad hilltopbr hill2topbl hill2toptl hilltoptr tex redBrick ramp2leftwall
+quad hill2topbr hillbb hillbt hill2toptr tex redBrick ramp2rightwall
+
+clear vertices
+
+vertex blb1 -15 rampHeight+hill2Height 0
+vertex brb1 -10 rampHeight+hill2Height 0
+vertex brtop1 -10 rampHeight+hill2Height+ceilHeight 0
+vertex bltop1 -15 rampHeight+hill2Height+ceilHeight 0
+
+vertex flb1 -15 rampHeight+hill2Height -5
+vertex frb1 -10 rampHeight+hill2Height -5
+vertex fltop1 -15 rampHeight+hill2Height+ceilHeight -5
+vertex frtop1 -10 rampHeight+hill2Height+ceilHeight -5
+
+quad blb1 brb1 frb1 flb1 tex mud floor1
+quad blb1 bltop1 fltop1 flb1 tex redBrick leftWall
+quad frb1 flb1 fltop1 frtop1 tex redBrick backWall

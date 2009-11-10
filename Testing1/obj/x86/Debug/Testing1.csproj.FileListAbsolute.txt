@@ -1,0 +1,8 @@
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\bin\Debug\Testing1.exe
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\bin\Debug\Testing1.pdb
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\bin\Debug\lesson05.exe
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\bin\Debug\csgl.dll
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\bin\Debug\lesson05.pdb
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\obj\x86\Debug\Testing1.exe
+C:\Users\Nick\Desktop\Code\OPENGL\myThing1\Testing1\obj\x86\Debug\Testing1.pdb

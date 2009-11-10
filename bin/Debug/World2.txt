@@ -1,0 +1,35 @@
+start 1 1.2 1 150 0
+
+#first room
+
+vertex brt1 0.0 3.0 0.0
+vertex blt1 10.0 3.0 0.0
+vertex brb1 0.0 0.0 0.0
+vertex blb1 10.0 0.0 0.0
+
+vertex mrb1 0 0 7.5
+vertex mrt1 0 3 7.5
+vertex mlb1 10 0 7.5
+vertex mlt1 10 3 7.5
+
+vertex flt1 10.0 3.0 15.0
+vertex frt1 0.0 3.0 15.0
+vertex flb1 10.0 0.0 15.0
+vertex frb1 0.0 0.0 15.0
+
+vertex doorrb1 3 0 15
+vertex doorlb1 5 0 15
+vertex doorrt1 3 2.2 15
+vertex doorlt1 5 2.2 15
+
+vertex doorrceil1 3 3 15
+vertex doorlceil1 5 3 15
+#end first room
+
+texture Textures/Brick.bmp brick
+texture Textures/ShitMud.bmp mud
+
+quad flb1 frb1 brb1 blb1 tex mud floor1
+#quad doorrb1 doorlb1 doorlt1 doorrt1 color 0.5 0.5 1 aboveDoor 
+
+quad blb1 blt1 brt1 brb1 tex brick back
