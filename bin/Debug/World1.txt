@@ -9,6 +9,7 @@ value hill2Height 5
 texture Textures/Brick.bmp brick
 texture Textures/ShitMud.bmp mud
 texture Textures/redBrick.bmp redBrick
+texture Textures/concrete.bmp concrete
 
 
 #first room
@@ -38,6 +39,7 @@ vertex doorlceil1 5 ceilHeight 15
 
 
 quad flb1 frb1 brb1 blb1 tex mud floor1
+quad flt1 frt1 brt1 blt1 tex concrete ceiling1
 
 quad blb1 blt1 brt1 brb1 tex brick back1
 
@@ -79,6 +81,7 @@ vertex blb2 10 0 23
 vertex brb2 0 0 23
 
 quad blb2 flb2 frb2 brb2 tex mud floor2
+quad blt2 flt2 frt2 brt2 tex concrete ceiling2
 
 quad blb2 flb2 flt2 blt2 tex redBrick left2
 quad blt2 brt2 brb2 blb2 tex redBrick back2
@@ -101,6 +104,7 @@ vertex hillbt -10 rampHeight+ceilHeight 15.2
 vertex hillft -10 rampHeight+ceilHeight 23
 
 quad hillbb hillfb brb2 frb2 tex mud rampFloor
+quad hillft brt2 frt2 hillbt tex concrete rampCeiling
 quad hillbt frt2 frb2 hillbb tex redBrick rampLeftwall
 quad hillft brt2 brb2 hillfb tex redBrick rampRightWal
 
@@ -111,6 +115,7 @@ vertex hilltoptl -15 rampHeight+ceilHeight 23
 vertex hilltoptr -15 rampHeight+ceilHeight 15.2
 
 quad hillbb hilltopbr hilltopbl hillfb tex mud rampFlat
+quad hillbt hillft hilltoptl hilltoptr tex concrete rampFlatCeiling
 
 vertex hill2topbl -15 rampHeight+hill2Height 0
 vertex hill2topbr -10 rampHeight+hill2Height 0
@@ -118,6 +123,7 @@ vertex hill2toptr -10 rampHeight+hill2Height+ceilHeight 0
 vertex hill2toptl -15 rampHeight+hill2Height+ceilHeight 0
 
 quad hilltopbr hill2topbl hill2topbr hillbb tex mud ramp2floor
+quad hilltoptr hill2toptl hill2toptr hillbt tex concrete ramp2Ceiling
 quad hilltopbr hill2topbl hill2toptl hilltoptr tex redBrick ramp2leftwall
 quad hill2topbr hillbb hillbt hill2toptr tex redBrick ramp2rightwall
 
@@ -134,5 +140,6 @@ vertex fltop1 -15 rampHeight+hill2Height+ceilHeight -5
 vertex frtop1 -10 rampHeight+hill2Height+ceilHeight -5
 
 quad blb1 brb1 frb1 flb1 tex mud floor1
+quad bltop1 brtop1 frtop1 fltop1 tex concrete ceil1
 quad blb1 bltop1 fltop1 flb1 tex redBrick leftWall
 quad frb1 flb1 fltop1 frtop1 tex redBrick backWall

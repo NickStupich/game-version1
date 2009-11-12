@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bullet.cs" />
+    <Compile Include="HUD.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

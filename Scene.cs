@@ -59,6 +59,8 @@ namespace WorldNavigator
         int timeBetweenUpdates = 10;    //ms
         #endregion
 
+        HUD hud;        
+
         #region constructors and helpers
         public Scene()
         {
@@ -72,6 +74,7 @@ namespace WorldNavigator
             triangles = new List<Triangle>();
             quads = new List<Quad>();
             bullets = new List<Bullet>();
+            hud = new HUD();
 
             StreamReader reader = new FileInfo(inputFilename).OpenText();
             string line;
@@ -551,9 +554,9 @@ namespace WorldNavigator
 
             MoveObserver(cameraVelocity.GetScaledVector(timeSinceLastDraw));
 
-            foreach (Bullet bullet in bullets)
+            for (int i = 0; i < bullets.Count; i++)
             {
-                bullet.Move(timeSinceLastDraw, quads);
+                bullets[i].Move(timeSinceLastDraw, quads);
             }
 
             finished = !ProcessInput(timeSinceLastDraw);
@@ -579,6 +582,9 @@ namespace WorldNavigator
             {
                 bullet.Draw();
             }
+
+            hud.Draw();
+            
         }
     }
 }

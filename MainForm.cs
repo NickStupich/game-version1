@@ -40,14 +40,14 @@ namespace WorldNavigator
 
             DateTime lastDrawTime = DateTime.Now;
             double fpsNum = 0, fpsDenom = 0, smoothingFactor = 0.99;
-            int timeBetweenFrames = 25;
+            //int timeBetweenFrames = 25;
             form.Focus();
 
 			while ((!form.view.finished) && (!form.IsDisposed))		// refreshing the window
 			{
-                int timeSinceLastDraw = (DateTime.Now - lastDrawTime).Milliseconds;
-                if (timeSinceLastDraw < timeBetweenFrames)
-                    Thread.Sleep(timeBetweenFrames - timeSinceLastDraw);
+                //int timeSinceLastDraw = (DateTime.Now - lastDrawTime).Milliseconds;
+                //if (timeSinceLastDraw < timeBetweenFrames)
+                //    Thread.Sleep(timeBetweenFrames - timeSinceLastDraw);
                 
                     double fps = 1000.0 / (DateTime.Now - lastDrawTime).TotalMilliseconds;
                     fpsNum = fpsNum * smoothingFactor + fps;
